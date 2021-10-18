@@ -8,22 +8,24 @@
 
 
     {{block 'title'}} {{/block}}
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/foot.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/public/css/topbar.css">
-
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/page.css">
+    <link rel="stylesheet" href="public/css/product.css">
+    <link rel="stylesheet" href="public/css/number.css">
+    <link rel="stylesheet" href="public/css/navbar.css" >
+    <link rel="stylesheet" href="public/css/topbar.css" />
+    <link rel="stylesheet" href="public/css/foot.css">
     {{block 'style'}} {{/block}}
 </head>
 
 <body>
-    {{include '../_partials/header.html'}}
+    {{include '../common/header.html'}}
 
     {{block 'content'}} {{/block}}
-    {{include '../_partials/footer.html'}}
+    {{include '../common/foot.html'}}
 
-    <script src="/jquery/dist/jquery.js"></script>
-    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/public/js/jquery-3.1.1.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
 
     {{block 'script'}} {{/block}}
 </body>
