@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const expressSession = require('express-session');
+const bodyParser=require('body-parser')
 const path = require('path');
 app.set('views', path.join(__dirname, 'views')); //也就是写出模板所在的跟路径
 // 当时用渲染后缀为html的模板时候，所使用的模板引擎是什么
