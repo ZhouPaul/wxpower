@@ -1,16 +1,16 @@
 const express=require('express');
 const admin=express.Router();
 admin.get('/intro',(req,res)=>{
-    res.send('intro');
+    res.render('intro.html');
 });
 admin.get('/honor',(req,res)=>{
-    res.send('honor');
+    res.render('honor.html');
 });
 admin.get('/policy',(req,res)=>{
-    res.send('policy');
+    res.render('policy.html');
 });
 admin.get('/quality',(req,res)=>{
-    res.send('quality');
+    res.render('quality.html');
 });
 admin.get('/culture',(req,res)=>{
     res.render('culture.html');
