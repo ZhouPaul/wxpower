@@ -1,5 +1,39 @@
 {{extend './common/loyouts.html'}}
 {{block 'link'}}
-<link rel="stylesheet" href="css/intro.css">
-<link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/xhintro.css">
+<link rel="stylesheet" href="css/xhpage.css">
+<link rel="stylesheet" href="css/xhculture.css">
+{{/block}}
+
+{{block 'content'}}
+<!-- 公司介绍模块 -->
+<div class="mask"></div>
+<!-- 标语部分 -->
+{{include './common/slogan.html'}}
+<section class="intro clearfix">
+    <div class="container">
+        {{include './common/intro.html'}}
+        <div class="culture-page">
+            <div class="culture-title text-center">
+                <h1>企业文化</h1>
+            </div>
+            <ul class="culture-img list-unstyled">
+                <li><img src="img/wenhua01.jpg" alt=""></li>
+                <li><img src="img/wenhua02.jpg" alt=""></li>
+                <li><img src="img/wenhua03.jpg" alt=""></li>
+                <li><img src="img/wenhua04.jpg" alt=""></li>
+                <li><img src="img/wenhua05.jpg" alt=""></li>
+                <li><img src="img/wenhua06.jpg" alt=""></li>
+                <li><img src="img/wenhua07.jpg" alt=""></li>
+                <li><img src="img/wenhua08.jpg" alt=""></li>
+                <li><img src="img/wenhua09.jpg" alt=""></li>
+                <li><img src="img/wenhua10.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{{/block}}
+{{block 'script'}}
+<script src="js/xhindex.js"></script>
+<script src="js/xhhonor.js"></script>
 {{/block}}
