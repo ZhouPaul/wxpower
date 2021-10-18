@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    {{block 'title'}} {{/block}}
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/foot.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/topbar.css">
+
+    {{block 'style'}} {{/block}}
+</head>
+
+<body>
+    {{include '../_partials/header.html'}}
+
+    {{block 'content'}} {{/block}}
+    {{include '../_partials/footer.html'}}
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+
+    {{block 'script'}} {{/block}}
+</body>
+
+</html>
