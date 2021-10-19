@@ -21,5 +21,14 @@ admin.get('/quality', (req, res) => {
 });
 admin.get('/culture', (req, res) => {
     res.render('culture.html');
+});
+admin.get('/contact',(req,res)=>{
+    res.render('contact.html');
+});
+admin.get('/talents',(req,res)=>{
+    res.render('talents.html');
+});
+admin.get('/need',(req,res)=>{
+    res.render('need.html');
 })
 module.exports = admin;
