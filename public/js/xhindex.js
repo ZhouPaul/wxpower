@@ -1,8 +1,8 @@
 $(function () {
     $(document).scroll(function () {
         var result = $(window).width();
-        if (result < 800) {
-            if ($(this).scrollTop() >= 160) {
+        if (result < 784) {
+            if ($(this).scrollTop() >= 244) {
                 $('.page-tabs').css({
                     "position": 'fixed',
                     'top': 30
@@ -13,10 +13,10 @@ $(function () {
                 })
             }
         }else {
-            if ($(this).scrollTop() >= 260) {
+            if ($(this).scrollTop() >= 344) {
                 $('.page-tabs').css({
                     "position": 'fixed',
-                    'top': 31.5
+                    'top': 30
                 })
             }else {
                 $('.page-tabs').css({
