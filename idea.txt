@@ -1,0 +1,9 @@
+{"title":"办公区域","img":"/public/img/20180327143611168.jpg","ideaImg":"/public/img/20180327143614275.jpg"}
+{"title":"机加工","img": "/public/img/20180327143448945.jpg","ideaImg":"/public/img/20180327143450566.jpg"}
+{"title":"库存-立式仓库","img":"/public/img/20180327143300461.jpg","ideaImg":"/public/img/20180327143303683.jpg"}
+{"title":"装配","img":"/public/img/20180327142521320.jpg","ideaImg":"/public/img/20180327142524884.jpg"}
+{"title":"装配","img":"/public/img/20180327142119707.jpg","ideaImg":"/public/img/20180327142122425.jpg"}
+{"title":"试车","img":"/public/img/20180327142957111.jpg","ideaImg":"/public/img/20180327142959288.jpg"}
+{"title":"喷涂线","img":"/public/img/20180327143143655.jpg","ideaImg":"/public/img/20180327143145263.jpg"}
+{"title":"质检-三坐标测量仪","img":"/public/img/20180327142626504.jpg","ideaImg":"/public/img/20180327142627934.jpg"}
+{"title":"污水处理设施","img":"/public/img/20180327142808116.jpg","ideaImg":"/public/img/20180327142811670.jpg"}
