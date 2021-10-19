@@ -47,10 +47,6 @@ app.use(expressSession({
 //挂载路由
 app.use("/", route);
 
-app.get('/',(req,res)=>{
-    res.send('ok');
-})
-
 app.listen(8000, function () {
     console.log('8000端口已启用');
 })

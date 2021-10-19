@@ -1,3 +1,6 @@
+body .inbanner {
+  background-image: url('/public/images/inbanner01.jpg');
+}
 .detail {
   width: 1020px;
   margin: 0 auto;
