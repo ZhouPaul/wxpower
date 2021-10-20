@@ -1,12 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const route = require("./route/admin.js");
+const admin = require("./route/admin.js");
 const expressSession = require('express-session');
 const bodyParser = require('body-parser')
 const path = require('path');
 const app = express();
-// app.set('views', path.join(__dirname, 'views')); //也就是写出模板所在的跟路径
-app.set("views", __dirname + "/views");
+app.set('views', path.join(__dirname, 'views')); //也就是写出模板所在的跟路径
 // 当时用渲染后缀为html的模板时候，所使用的模板引擎是什么
 app.engine('html', require('express-art-template'));
 // 开启静态路由这是在根目录下开启静态路由的
@@ -37,8 +36,8 @@ mongoose.connect('mongodb://127.0.0.1/power')
     });
 
 //挂载路由
-app.use("/", route);
+app.use("/", admin);
 
 app.listen(8000, function () {
-    console.log('8000端口已启用');
+    console.log('服务器已启用');
 })
