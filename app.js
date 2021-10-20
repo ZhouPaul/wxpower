@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require("body-parser");
-const router = require("./router");
+const admin = require("./router");
 const mongoose = require('mongoose');
 const app = express();
 const expressSession = require('express-session');
@@ -27,7 +27,7 @@ app.use(expressSession({
     rolling: true,
     store: null
 }));
-app.use("/",router);
+app.use("/",admin);
 mongoose.connect('mongodb://127.0.0.1/power')
     .then(() => {
         console.log('数据库连接成功');
