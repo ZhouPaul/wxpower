@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views')); //也就是写出模板所在�
 app.engine('html', require('express-art-template'));
 // 开启静态路由这是在根目录下开启静态路由的
 app.use(express.static("./node_modules"));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static("./public"));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -34,8 +34,7 @@ mongoose.connect('mongodb://127.0.0.1/power')
     .catch(() => {
         console.log('数据库连接失败');
     });
-
 app.use('/', admin);
 app.listen(8000, function () {
-    console.log('服务已经启动');
+    console.log('服务器已启用');
 })
