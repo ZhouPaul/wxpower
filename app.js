@@ -17,9 +17,6 @@ app.use(bodyParser.urlencoded({
 }));
 //解析请求头为 "application/json"的post请求参数
 app.use(bodyParser.json());
-
-
-
 app.use(expressSession({
     name: "mazg",
     secret: 'secret',
