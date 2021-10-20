@@ -1,4 +1,4 @@
-{{extend './common/loyouts.html'}}
+{{extend '../common/layout.html'}}
 {{block 'title'}}
 <title>企业文化</title>
 {{/block}}
@@ -12,7 +12,14 @@
 <!-- 公司介绍模块 -->
 <div class="mask"></div>
 <!-- 标语部分 -->
-{{include './common/slogan.html'}}
+<div class="inbanner">
+    <div class="container">
+        <div class="title">
+            <div class="company text-center">公司介绍</div>
+            <div class="intro text-center">研制生产内燃机、涡轮增压器、柴油发电机组及其零部件的大型骨干企业</div>
+        </div>
+    </div>
+</div>
 <section class="intro clearfix">
     <div class="container">
         <ul class="nav page-tabs text-center clearfix" data-spy="affix" data-offset-top="260">

@@ -5,30 +5,30 @@ admin.get('/intro', async(req, res) => {
     var id = req.query.id;
     if (id) {
         const content=await Develop.findOne({"num":id});
-        res.render('detail.html',{content:content});
+        res.render('xhintro/detail.html',{content:content});
     }else {
-        res.render('intro.html');
+        res.render('xhintro/intro.html');
     }
 });
 admin.get('/honor', (req, res) => {
-    res.render('honor.html');
+    res.render('xhintro/honor.html');
 });
 admin.get('/policy', (req, res) => {
-    res.render('policy.html');
+    res.render('xhintro/policy.html');
 });
 admin.get('/quality', (req, res) => {
-    res.render('quality.html');
+    res.render('xhintro/quality.html');
 });
 admin.get('/culture', (req, res) => {
-    res.render('culture.html');
+    res.render('xhintro/culture.html');
 });
 admin.get('/contact',(req,res)=>{
-    res.render('contact.html');
+    res.render('xhintro/contact.html');
 });
 admin.get('/talents',(req,res)=>{
-    res.render('talents.html');
+    res.render('xhintro/talents.html');
 });
 admin.get('/need',(req,res)=>{
-    res.render('need.html');
+    res.render('xhintro/need.html');
 })
 module.exports = admin;
