@@ -7,7 +7,4 @@ router.get("/", async (req, res) => {
   var result = await User.find();
   res.render("index.html",{result});
   });
-router.get("/index1",(req,res)=>{
-  res.render("topic/index1.html");
-});
 module.exports = router;
