@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require("body-parser");
-const admin = require("./router");
+const admin = require("./route/admin");
 const mongoose = require('mongoose');
 const app = express();
 const expressSession = require('express-session');
