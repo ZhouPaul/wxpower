@@ -1,8 +1,12 @@
 const express = require("express");
 const route = express.Router();
-const {User,User2,User3,User4,User5,User6,User7,User8,User9,User10,User11} = require("../models/user")
-// const User2 = require("../models/user")
+const {User,User2,User3,User4,User5,User6,User7,User8,User9,User10,User11} = require("../models/user");
+
 //产品展示首页接口
+route.get("/product", (req, res) => {
+    res.render("product.html")
+});
+
 route.get("/product1", (req, res) => {
     res.render("product1.html")
 });
@@ -80,8 +84,5 @@ route.get("/detail8", async (req, res, next) => {
         listMsg11: data11,
     })
 })
-
-
-
 
 module.exports = route;

@@ -1,7 +1,7 @@
-{{extend '../_layouts/layout.html'}} {{block 'title'}}
+{{extend '../common/layout.html'}} {{block 'title'}}
 <title>产品详情</title>
-<link rel="stylesheet" href="/public/css/xkdetail.css">
-<link rel="stylesheet" href="public/css/xkintro1.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
 {{/block}} {{block 'style'}} {{/block}}
 {{block 'content'}}
 <!-- 标语部分 -->
@@ -16,7 +16,7 @@
 <!-- 产品介绍模块 -->
 <section class="intro clearfix">
     <div class="container">
-        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="260">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
             <li><a href="/product1">国Ⅲ系列</a></li>
             <li><a href="/product2">电站系列</a></li>
             <li class="active"><a href="/product3">通用配套系列</a></li>
@@ -35,7 +35,7 @@
 <section class="detail clearfix">
     <div>
         <div class="img-cyj">
-            <img src="/public/images/20180413134150180.jpg" alt="">
+            <img src="/img/20180413134150180.jpg" alt="">
         </div>
         <h3>消防泵水泵用柴油机</h3>
         <p>
@@ -173,13 +173,37 @@
             {{/each}}
         </tbody>
     </table>
+    <h3>部分项目汇总</h3>
+        <p>
+            中国南海工程<br>
+            中海石油<br>
+            陕西榆林煤电<br>
+            鲁西化工<br>
+            西北化工<br>
+            山东石化<br>
+            特种金属材料有限公司<br>
+            中国电建<br>
+            中国能源建设集团<br>
+            河北华北石油<br>
+            辽宁鞍钢<br>
+            上海石化消防工程<br>
+            中油吉林化建工程有限公司<br>
+            济南四建集团<br>
+            西北能源化工<br>
+            兰鑫钢铁<br>
+            南京金陵石化工程<br>
+            首都国际机场<br>
+            浦东国际机场<br>
+            大型房地产企业<br>
+            石油天然气输送管道<br>
+        </p>
 </section>
 
 <!-- 底部页码 -->
 <section class="footer-page clearfix">
-    <div>◀ 上一篇</div>
+    <div><a href="/detail7">◀ 上一篇</a></div>
     <div>
-        <a href="./detail.html">回到顶部</a>
+        <a href="/detail8">回到顶部</a>
     </div>
     <div>下一篇 ▶</div>
 </section>

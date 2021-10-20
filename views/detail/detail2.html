@@ -1,7 +1,7 @@
-{{extend '../_layouts/layout.html'}} {{block 'title'}}
+{{extend '../common/layout.html'}} {{block 'title'}}
 <title>产品详情</title>
-<link rel="stylesheet" href="/public/css/xkdetail.css">
-<link rel="stylesheet" href="public/css/xkintro1.css">
+<link rel="stylesheet" href="/css/xkdetail.css">
+<link rel="stylesheet" href="/css/xkintro1.css">
 {{/block}} {{block 'style'}} {{/block}}
 {{block 'content'}}
 <!-- 标语部分 -->
@@ -16,7 +16,7 @@
 <!-- 产品介绍模块 -->
 <section class="intro clearfix">
     <div class="container">
-        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="260">
+        <ul class="nav page-tabs text-center clearfix affix-top" data-spy="affix" data-offset-top="375">
             <li><a href="/product1">国Ⅲ系列</a></li>
             <li class="active"><a href="/product2">电站系列</a></li>
             <li><a href="/product3">通用配套系列</a></li>
@@ -35,10 +35,10 @@
 <section class="detail clearfix">
     <div>
         <div class="img-cyj">
-            <img src="/public/images/20180409103755154.jpg" alt="">
+            <img src="/img/20180409103755154.jpg" alt="">
         </div>
         <div class="img-cyj">
-            <img src="/public/images/20180409103904987.png" alt="">
+            <img src="/img/20180409103904987.png" alt="">
         </div>
         <!-- <p>　　万迪牌非道路国三排放型柴油机符合标准GB20891-2014《非道路移动机械用柴油机排气污染物排放限值及测量方法（中国第三、四阶段）》第三阶段要求，柴油机功率强劲、结构紧凑、维修方便、使用简单，功率范围353～1338kW，可供电站、水泵机组及其他通用配套等领域使用。
         </p> -->
@@ -96,11 +96,11 @@
 
 <!-- 底部页码 -->
 <section class="footer-page clearfix">
-    <div>◀ 上一篇</div>
+    <div><a href="/detail">◀ 上一篇</a></div>
     <div>
-        <a href="./detail.html">回到顶部</a>
+        <a href="/detail2">回到顶部</a>
     </div>
-    <div>下一篇 ▶</div>
+    <div><a href="/detail3">下一篇 ▶</a></div>
 </section>
 
 {{/block}}

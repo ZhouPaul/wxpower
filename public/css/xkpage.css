@@ -112,6 +112,7 @@
 .intro .container .page-tabs > li > a {
   border-radius: 4px 4px 0 0;
   padding: 0 15px;
+  border-bottom: solid 2px rgba(100, 100, 100, 0);
 }
 .intro .container .page-tabs > li > a:hover {
   background-color: #fff;
