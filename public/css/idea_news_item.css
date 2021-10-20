@@ -22,3 +22,6 @@
 .tab-content .inmain .wrapper p img {
   max-width: 100%;
 }
+.tab-content .inmain .wrapper p nav ul li {
+  width: 11%!important;
+}

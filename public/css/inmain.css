@@ -46,9 +46,13 @@
 .inmain .wrapper nav {
   text-align: center;
 }
+.inmain .wrapper nav .newsPage li {
+  width: 11% ;
+  margin: 2px;
+}
 .inmain .wrapper nav ul li {
   width: 14%;
-  margin: 2px;
+  margin: 5px;
 }
 .inmain .wrapper nav ul li .disabled {
   border: 0;

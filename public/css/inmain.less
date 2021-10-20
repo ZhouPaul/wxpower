@@ -16,20 +16,20 @@
   }
 
   .wrapper {
-    max-width : 1020px;
-    margin: 0 auto;
-    padding: 0;
+    max-width: 1020px;
+    margin   : 0 auto;
+    padding  : 0;
 
     ul {
       list-style: none;
       overflow  : hidden;
-      padding: 0;
+      padding   : 0;
 
       li {
-        width : 23%;
+        width  : 23%;
         padding: 0;
-        float : left;
-        margin: 0 1% 20px;
+        float  : left;
+        margin : 0 1% 20px;
 
         a {
           display   : block;
@@ -57,10 +57,17 @@
     nav {
       text-align: center;
 
+      .newsPage {
+        li {
+          width: 11% ;
+          margin: 2px;
+        }
+      }
+
       ul {
         li {
           width : 14%;
-          margin: 2px;
+          margin: 5px;
 
           .disabled {
             border: 0;
@@ -179,48 +186,56 @@
         border-bottom-right-radius: 3px;
       }
     }
+
   }
-  @media screen and(max-width:768px){
-    .intitle{
+
+  @media screen and(max-width:768px) {
+    .intitle {
       margin: 20px 0;
-      h1{
-        margin:  0;
-        font-size: 24px;
+
+      h1 {
+        margin     : 0;
+        font-size  : 24px;
         line-height: 40px;
       }
     }
-    .wrapper{
+
+    .wrapper {
       ul {
-        li{
-          width: 48%;
+        li {
+          width        : 48%;
           margin-bottom: 10px;
         }
       }
     }
   }
-  @media screen and(max-width:1020px){
-    .wrapper{
-      .idea_item{
-        width: 100%;
-        padding: 0 20px;
+
+  @media screen and(max-width:1020px) {
+    .wrapper {
+      .idea_item {
+        width     : 100%;
+        padding   : 0 20px;
         box-sizing: border-box;
-        img{
+
+        img {
           max-width: 100%;
         }
       }
     }
   }
 }
-#xinwen{
-  .wrapper{
+
+#xinwen {
+  .wrapper {
     max-width: 1020px;
-    margin: 0 auto;
+    margin   : 0 auto;
+
     .newslists {
       margin: 0 8%;
 
       li {
-        width: 100%;
-        margin: 0;
+        width         : 100%;
+        margin        : 0;
         border-bottom : 1px solid #dedede;
         padding-bottom: 20px;
         margin-bottom : 20px;
@@ -244,10 +259,11 @@
           overflow   : hidden;
 
           a {
-            font-size: 20px;
-            color    : #023589;
+            font-size : 20px;
+            color     : #023589;
             text-align: unset;
-            &:hover{
+
+            &:hover {
               text-decoration: underline;
             }
           }

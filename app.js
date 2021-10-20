@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-app.use("/node_modules", express.static("./node_modules"));
-app.use("/public", express.static("./public"));
+app.use(express.static("./node_modules"));
+app.use(express.static("./public"));
 
 app.engine("html", require("express-art-template"));
 app.set("views", __dirname + "/views");

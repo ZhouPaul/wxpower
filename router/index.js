@@ -6,18 +6,38 @@ const News = require("../models/news");
 
 
 router.get('/idea', async(req, res) => {
-    var idea = await Idea.find();
-    res.render("idea.html", { idea });
+    let page = req.query.page || 1;
+    let pagesize = 8;
+    let count = await Idea.countDocuments();
+    let total = Math.ceil(count / pagesize);
+    let start = (page - 1) * pagesize;
+
+    var idea = await Idea.find().limit(pagesize).skip(start);
+    res.render("idea.html", { idea, page, total });
 })
 
+// router.get('/idea', require("./admin/idea"))
+
 router.get('/case', async(req, res) => {
-    var cases = await Case.find();
-    res.render("case.html", { cases })
+    let page = req.query.page || 1;
+    let pagesize = 12;
+    let count = await Case.countDocuments();
+    let total = Math.ceil(count / pagesize);
+    let start = (page - 1) * pagesize;
+
+    var cases = await Case.find().limit(pagesize).skip(start);
+    res.render("case.html", { cases, page, total })
 })
 
 router.get('/news', async(req, res) => {
-    var news = await News.find();
-    res.render("news.html", { news })
+    let page = req.query.page || 1;
+    let pagesize = 6;
+    let count = await News.countDocuments();
+    let total = Math.ceil(count / pagesize);
+    let start = (page - 1) * pagesize;
+
+    var news = await News.find().limit(pagesize).skip(start);
+    res.render("news.html", { news, page, total })
 })
 
 router.get('/video', (req, res) => {
