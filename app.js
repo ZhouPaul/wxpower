@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser")
-const router = require("./router");
+const admin = require("./route/admin");
 const mongoose = require("mongoose");
 
 const app = express();
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //解析请求头为 "application/json"的post请求参数
 app.use(bodyParser.json());
 
-app.use('/', router);
+app.use('/', admin);
 
 
 mongoose.connect('mongodb://localhost/power')

@@ -1,11 +1,11 @@
 const express = require("express")
-const router = express.Router();
+const admin = express.Router();
 const Idea = require("../models/idea");
 const Case = require("../models/case");
 const News = require("../models/news");
 
 
-router.get('/idea', async(req, res) => {
+admin.get('/idea', async(req, res) => {
     let page = req.query.page || 1;
     let pagesize = 8;
     let count = await Idea.countDocuments();
@@ -16,9 +16,9 @@ router.get('/idea', async(req, res) => {
     res.render("idea.html", { idea, page, total });
 })
 
-// router.get('/idea', require("./admin/idea"))
+// admin.get('/idea', require("./admin/idea"))
 
-router.get('/case', async(req, res) => {
+admin.get('/case', async(req, res) => {
     let page = req.query.page || 1;
     let pagesize = 12;
     let count = await Case.countDocuments();
@@ -29,7 +29,7 @@ router.get('/case', async(req, res) => {
     res.render("case.html", { cases, page, total })
 })
 
-router.get('/news', async(req, res) => {
+admin.get('/news', async(req, res) => {
     let page = req.query.page || 1;
     let pagesize = 6;
     let count = await News.countDocuments();
@@ -40,27 +40,27 @@ router.get('/news', async(req, res) => {
     res.render("news.html", { news, page, total })
 })
 
-router.get('/video', (req, res) => {
+admin.get('/video', (req, res) => {
     res.render("video.html")
 })
 
-router.get('/settings/idea_item/:id', async(req, res) => {
+admin.get('/settings/idea_item/:id', async(req, res) => {
     var id = req.params["id"];
     var result = await Idea.findById(id);
     res.render("settings/idea_item.html", { idea: result })
 })
 
-router.get('/settings/case_item/:id', async(req, res) => {
+admin.get('/settings/case_item/:id', async(req, res) => {
     var id = req.params["id"];
     var result = await Case.findById(id);
     res.render("settings/case_item.html", { cases: result })
 })
 
-router.get('/settings/news_item/:id', async(req, res) => {
+admin.get('/settings/news_item/:id', async(req, res) => {
     var id = req.params["id"];
     var result = await News.findById(id);
     res.render("settings/news_item.html", { news: result })
 })
 
 
-module.exports = router;
+module.exports = admin;

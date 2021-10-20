@@ -1,8 +1,18 @@
 {{extend "./common/layout.html"}} {{block 'title'}}
 <title>生产现场 - 无锡动力工程股份有限公司</title>
-{{/block}} {{block 'style'}}
+{{/block}} {{block 'style'}}{{/block}} 
+{{block 'link'}}
 <link rel="stylesheet" href="/css/innav.css">
-<link rel="stylesheet" href="/css/inmain.css"> {{/block}} {{block 'content'}}
+<link rel="stylesheet" href="/css/inmain.css">
+<link rel="stylesheet" href="/css/inbanner.css">
+{{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="title">
+        <div class="cn">公司理念</div>
+        <div class="en">为大众更快、更及时的了解我公司的信息提供便利</div>
+    </div>
+</div>
 <div class="inpage">
     <div class="container">
         <!-- 导航栏 -->
@@ -29,4 +39,5 @@
         </div>
     </div>
 </div>
-{{/block}} {{block 'script'}} {{/block}}
+{{/block}} 
+{{block 'script'}} {{/block}}

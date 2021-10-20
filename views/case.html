@@ -1,9 +1,20 @@
-{{extend "./common/layout.html"}} {{block 'title'}}
+{{extend "./common/layout.html"}}
+{{block 'title'}}
 <title>生产现场 - 无锡动力工程股份有限公司</title>
-{{/block}} {{block 'link'}}
+{{/block}}
+{{block 'link'}}
 <link rel="stylesheet" href="/css/innav.css">
 <link rel="stylesheet" href="/css/inmain.css">
-<link rel="stylesheet" href="/css/inbanner.css"> {{/block}} {{block 'style'}} {{/block}} {{block 'content'}}
+<link rel="stylesheet" href="/css/inbanner.css">
+{{/block}}
+{{block 'style'}} {{/block}}
+{{block 'content'}}
+<div class="inbanner">
+    <div class="title">
+        <div class="cn">公司理念</div>
+        <div class="en">为大众更快、更及时的了解我公司的信息提供便利</div>
+    </div>
+</div>
 <div class="inpage">
     <div class="container">
         <!-- 导航栏 -->
@@ -43,19 +54,18 @@
                                     </a>
                                 </li>
                                 <li class="disabled">
-                                    <span class="disabled"><</span>
+                                    <span class="disabled">
+                                        <</span> </li> <% for(var i=1;i<=total;i++) { %> <li><a
+                                                href="/case?page=<%=i%>">{{i}}</a></li>
+                                <% } %>
+                                <li>
+                                    <span class="disabled">></span>
                                 </li>
-                                <% for(var i=1;i<=total;i++) { %>
-                                    <li><a href="/case?page=<%=i%>">{{i}}</a></li>
-                                    <% } %>
-                                        <li>
-                                            <span class="disabled">></span>
-                                        </li>
-                                        <li style="display: <%= page -0+1 > total ? 'none' : 'inline' %>">
-                                            <a href="/case?page=<%=page-0+1%>" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                        </li>
+                                <li style="display: <%= page -0+1 > total ? 'none' : 'inline' %>">
+                                    <a href="/case?page=<%=page-0+1%>" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
