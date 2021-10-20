@@ -1,6 +1,7 @@
 const express = require('express');
 const Develop = require('../models/power');
 const admin = express.Router();
+const Userz=require("../models/zuser")
 const {User,User2,User3,User4,User5,User6,User7,User8,User9,User10,User11} = require("../models/user");
 admin.get('/intro', async(req, res) => {
     var id = req.query.id;
@@ -114,4 +115,8 @@ admin.get("/detail8", async (req, res, next) => {
         listMsg11: data11,
     })
 })
+admin.get("/", async (req, res) => {
+  var result = await Userz.find();
+  res.render("index.html",{result});
+  });
 module.exports = admin;
