@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
-const Develop = require('./models/power');
 const expressSession = require('express-session');
 const path = require('path');
 const admin = require('./route/admin');
