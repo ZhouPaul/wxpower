@@ -1,0 +1,6 @@
+{"title":"国III","img":"img/hb02list01.png","href":"/product1","back":"../img/hb02listbg01.jpg"}
+{"title":"电站系列","img": "img/hb02list02.png","href":"/product2","back":"../img/hb02listbg02.jpg"}
+{"title":"通用配套系列","img":"img/hb02list03.png","href":"/product3","back":"../img/hb02listbg03.jpg"}
+
+
+mongoimport -d power -c users idea.txt
