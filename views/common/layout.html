@@ -11,20 +11,19 @@
     <link rel="stylesheet" href="/css/foot.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     {{block 'link'}}{{/block}}
-    <script src="/js/jquery-3.1.1.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     {{block 'style'}}{{/block}}
 </head>
-
 <body style="position:relative">
     {{include './header.html'}}
-    {{block 'content'}} {{/block}}
+    {{block 'content'}}{{/block}}
     {{include './foot.html'}}
-    {{block 'script'}} {{/block}}
+    {{block 'script'}}{{/block}}
 </body>
 
 </html>
