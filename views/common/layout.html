@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{block 'title'}}{{/block}}
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link href="/css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/topbar.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/six.css" />
-    <link rel="stylesheet" href="/css/cp.css" />
-    <link rel="stylesheet" href="/css/qysp.css" />
-    <link rel="stylesheet" href="/css/xwdt.css" />
     <link rel="stylesheet" href="/css/foot.css" />
-    <link rel="stylesheet" href="/css/xyy.css" />
-    <link rel="stylesheet" href="/css/swiper.min.css">
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    {{block 'link'}}{{/block}}
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
     {{block 'style'}}{{/block}}
 </head>
-<body>
-    {{include '../common/header.html'}}
-     <script src="/js/jquery-3.1.1.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="../../public/js/swiper.min.js"></script>
+<body style="position:relative">
+    {{include './header.html'}}
     {{block 'content'}}{{/block}}
-    {{include '../common/foot.html'}}
+    {{include './foot.html'}}
     {{block 'script'}}{{/block}}
 </body>
 </html>

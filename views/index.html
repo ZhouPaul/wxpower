@@ -1,4 +1,12 @@
 {{extend './common/layout.html'}}
+{{block 'link'}}
+    <link rel="stylesheet" href="/css/six.css" />
+    <link rel="stylesheet" href="/css/cp.css" />
+    <link rel="stylesheet" href="/css/qysp.css" />
+    <link rel="stylesheet" href="/css/xwdt.css" />
+    <link rel="stylesheet" href="/css/xyy.css" /> 
+    <link rel="stylesheet" href="/css/swiper.min.css">       
+{{/block}}
     {{block 'style'}}
     <style>
       html, body {
@@ -42,6 +50,7 @@
 {{include './common/header.html'}}
 {{block 'content'}}
       <!-- 轮播图 -->
+      <script src="/js/swiper.min.js"></script>
       <div class="swiper-container lbt" style="margin-top:-20px;">
         <div class="swiper-wrapper lbt1">
             <div class="swiper-slide"><img src="img/banner01.jpg"></div>
