@@ -1,8 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const app = express();
+const Develop=require('./models/power');
 const expressSession = require('express-session');
 const path = require('path');
+// 将路由模块引进来
+const admin = require('./route/admin');
 app.set('views', path.join(__dirname, 'views')); //也就是写出模板所在的跟路径
 // 当时用渲染后缀为html的模板时候，所使用的模板引擎是什么
 app.engine('html', require('express-art-template'));
@@ -31,7 +35,10 @@ mongoose.connect('mongodb://127.0.0.1/power')
     })
     .catch(() => {
         console.log('数据库连接失败');
-    })
+    });
+
+
+app.use('/', admin);
 app.listen(8000, function () {
     console.log('服务已经启动');
 })
