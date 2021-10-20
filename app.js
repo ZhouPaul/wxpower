@@ -27,7 +27,7 @@ app.use(expressSession({
     rolling: true,
     store: null
 }));
-app.use("/",admin);
+app.use("/", admin);
 mongoose.connect('mongodb://127.0.0.1/power')
     .then(() => {
         console.log('数据库连接成功');
