@@ -1,11 +1,17 @@
-{{extend '../common/layout.html'}} {{block 'title'}}
-<title>产品详情</title>
+{{extend '../common/layout.html'}}
+{{block 'title'}}
+<title>产品详情1</title>
+{{/block}}
+{{block 'link'}}
+<link rel="stylesheet" href="/css/xkpage.css">
+<link rel="stylesheet" href="/css/xkproduct.css">
+<link rel="stylesheet" href="/css/xknumber.css">
 <link rel="stylesheet" href="/css/xkdetail.css">
 <link rel="stylesheet" href="/css/xkintro1.css">
-{{/block}} {{block 'style'}} {{/block}}
+{{/block}}
 {{block 'content'}}
- <!-- 标语部分 -->
- <div class="inbanner">
+<!-- 标语部分 -->
+<div class="inbanner">
     <div class="container">
         <div class="title">
             <div class="company text-center">产品展示</div>
@@ -91,7 +97,7 @@
                 <td>{{$value.oil}}</td>
                 <td>{{$value.temperature}}</td>
             </tr>
-        {{/each}}
+            {{/each}}
         </tbody>
     </table>
     <h3>蓝迪系列非道路国三排放柴油机</h3>
@@ -112,13 +118,13 @@
                     °C</th>
             </tr>
             {{each listMsg2}}
-                <tr>
-                    <td>{{$value.model}}</td>
-                    <td>{{$value.speed}}</td>
-                    <td>{{$value.KW}}</td>
-                    <td>{{$value.oil}}</td>
-                    <td>{{$value.temperature}}</td>
-                </tr>
+            <tr>
+                <td>{{$value.model}}</td>
+                <td>{{$value.speed}}</td>
+                <td>{{$value.KW}}</td>
+                <td>{{$value.oil}}</td>
+                <td>{{$value.temperature}}</td>
+            </tr>
             {{/each}}
         </tbody>
     </table>

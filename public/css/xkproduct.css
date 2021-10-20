@@ -22,11 +22,14 @@
   background: #ed0e00;
   color: #fff;
 }
+.row .img:hover .nam {
+  text-decoration: none;
+}
 .row .img img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 .row .img img:hover {
   transform: scale(1.1);
